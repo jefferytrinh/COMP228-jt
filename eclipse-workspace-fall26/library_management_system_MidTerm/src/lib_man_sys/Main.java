@@ -13,7 +13,8 @@ public class Main
 		member2.registerMember("Premium"); // will list as premium
 		
 		System.out.println("\n"); // spacign
-
+		
+		// creating librarian/senior/assistant
 		Librarian librarian = new Librarian(3, "Jane,", "(416) 333-4444", "L001", "Circulation", 4000, 20, 100);
 
 		SeniorLibrarian senior = new SeniorLibrarian(4, "Emm", "(647) 444-5555", "SL001", "Archives", 5000, 25, 120, "Research", 1000);
