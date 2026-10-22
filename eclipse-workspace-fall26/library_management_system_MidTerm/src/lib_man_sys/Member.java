@@ -7,30 +7,30 @@ public class Member extends Person
 	int age;
 	private String membershipType;
 	private double outstandingFees;
-	
+
 	public Member(int personId, String name, String phoneNumber, String memberNumber, int age)
 	{
 		super(personId, name, phoneNumber); // ref to im. parent class obj
-		
+
 		if(age < 0)
 			throw new IllegalArgumentException("Invalid age");
-		
+
 		this.memberNumber = memberNumber;
 		this.age = age;
 	}
-	
+
 	public void registerMember() // per req.
 	{
 		membershipType = "Regular";
 		System.out.println(name + " registered.");
 	}
-	
+
 	public void registerMember(String membershipType) // for have membership type
 	{
 		this.membershipType = membershipType;
 		System.out.println(name + " registered as " + membershipType);
 	}
-	
+
 	@Override
 	public String getRoleDescription()
 	{

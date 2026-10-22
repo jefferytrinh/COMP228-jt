@@ -5,7 +5,7 @@ public class LibraryAssistant extends LibraryStaff
     private String shiftType;
     private double shiftAllowance;
 
-    public LibraryAssistant(int personId, String name, String phoneNumber, String staffId, String department, double salary, String shiftType, double shiftAllowance)
+    public LibraryAssistant(int personId, String name, String phoneNumber, String staffId, String department, double salary, String shiftType, double shiftAllowance) // when adding LibraryAssistant will correspond
     {
         super(personId, name, phoneNumber, staffId, department, salary);
 
@@ -29,9 +29,8 @@ public class LibraryAssistant extends LibraryStaff
     @Override
     public void displayStaffDetails()
     {
-        super.displayStaffDetails();
+        super.displayStaffDetails(); // apparently needs super because all breaks without it
 
-        System.out.println(
-                "Shift: " + shiftType);
+        System.out.println("Shift: " + shiftType);
     }
 }
