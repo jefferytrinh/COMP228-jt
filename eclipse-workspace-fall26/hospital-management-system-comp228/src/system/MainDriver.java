@@ -1,8 +1,10 @@
 package system;
 
-public class MainDriver {
+public class MainDriver 
+{
 
-    public static void main(String[] args) {
+    public static void main(String[] args) 
+    {
 
         Doctor doctor =
                 new Doctor(101, "John", 45, "Cardiology", 150);

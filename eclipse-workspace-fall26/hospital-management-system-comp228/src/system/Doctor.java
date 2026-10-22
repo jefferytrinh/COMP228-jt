@@ -1,11 +1,12 @@
 package system;
 
-public class Doctor extends Person {
+public class Doctor extends Person 
+{
 	protected String specialization;
 	protected double consultationFee;
 
-	public Doctor(int personId, String name, int age,
-			String specialization, double consultationFee) {
+	public Doctor(int personId, String name, int age, String specialization, double consultationFee) 
+	{
 
 		super(personId, name, age);
 
@@ -13,17 +14,20 @@ public class Doctor extends Person {
 		this.consultationFee = consultationFee;
 	}
 
-	public void diagnosePatient() {
+	public void diagnosePatient() 
+	{
 		System.out.println(name + " is diagnosing a patient.");
 	}
 
 	@Override
-	public void performDuties() {
+	public void performDuties() 
+	{
 		System.out.println(name + " is treating patients.");
 	}
 
 	@Override
-	public String toString() {
+	public String toString() 
+	{
 		return super.toString() + ", Specialization: " + specialization + ", Fee: $" + consultationFee;
 	}
 }
