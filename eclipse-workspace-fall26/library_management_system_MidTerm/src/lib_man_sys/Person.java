@@ -8,7 +8,7 @@ public abstract class Person
 	String phoneNumber;
 	static int personCount = 0; // to fill
 
-	public Person(int personId, String name, String phoneNumber) // // when adding SeniorLibrarian will correspond
+	public Person(int personId, String name, String phoneNumber) // when adding SeniorLibrarian will correspond
 	{
 		this.personId = personId;
 		this.name = name;
