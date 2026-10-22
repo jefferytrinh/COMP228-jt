@@ -8,7 +8,7 @@ public class Member extends Person
 	private String membershipType;
 	private double outstandingFees;
 
-	public Member(int personId, String name, String phoneNumber, String memberNumber, int age)
+	public Member(int personId, String name, String phoneNumber, String memberNumber, int age) // when adding Member will correspond
 	{
 		super(personId, name, phoneNumber); // ref to im. parent class obj
 
