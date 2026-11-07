@@ -7,9 +7,11 @@ import javafx.scene.control.*;
 import javafx.scene.layout.*;
 import javafx.stage.Stage;
 
-public class Main extends Application {
+public class Main extends Application 
+{
 
-	public void start(Stage stage) {
+	public void start(Stage stage) 
+	{
 
 		BorderPane root = new BorderPane();
 
@@ -17,11 +19,7 @@ public class Main extends Application {
 		root.setTop(new HBox(new Label("Student Registration")));
 
 		// left
-		root.setLeft(new VBox(10,
-				new Button("Dashboard"),
-				new Button("Registration"),
-				new Button("Courses"),
-				new Button("Help")));
+		root.setLeft(new VBox(10, new Button("Dashboard"), new Button("Registration"), new Button("Courses"), new Button("Help")));
 
 		// form fields
 		TextField id = new TextField();
@@ -43,7 +41,7 @@ public class Main extends Application {
 		Button register = new Button("Register");
 		Button clear = new Button("Clear");
 
-		// when prsesed "register"
+		// when pressed "register"
 		register.setOnAction(e -> 
 		{
 			if (id.getText().isEmpty() ||
@@ -62,7 +60,8 @@ public class Main extends Application {
 		);
 		
 		// when pressed "clear"
-		clear.setOnAction(e -> {
+		clear.setOnAction(e -> 
+		{
 			id.clear();
 			name.clear();
 			email.clear();
@@ -71,9 +70,8 @@ public class Main extends Application {
 		}
 		);
 
-		VBox center = new VBox(10,
-				form,
-				new HBox(10, register, clear),
+		VBox center = new VBox(10, form, 
+				new HBox(10, register, clear), 
 				status);
 
 		center.setPadding(new Insets(10));
@@ -85,7 +83,8 @@ public class Main extends Application {
 		stage.show();
 	}
 
-	public static void main(String[] args) {
+	public static void main(String[] args) 
+	{
 		launch(args);
 	}
 }
